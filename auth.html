@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Access Control</title>
+    <style>
+        body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f0f0f0; }
+        .auth-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        input { padding: 10px; margin: 10px 0; width: 200px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Authentication Required</h2>
+        <input type="password" id="accessCode" placeholder="Enter access code" onkeypress="if(event.key==='Enter') checkAccess()">
+        <br>
+        <button onclick="checkAccess()">Submit</button>
+    </div>
+    <script>
+        function checkAccess() {
+            if(document.getElementById('accessCode').value === 'AgenticSDLC') {
+                sessionStorage.setItem('authenticated', 'true');
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid access code');
+            }
+        }
+    </script>
+</body>
+</html>
