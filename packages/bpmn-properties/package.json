@@ -1,0 +1,14 @@
+{
+  "name": "@bpmn-modeler/properties",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@bpmn-modeler/core": "*",
+    "react": "^18.3.1"
+  }
+}

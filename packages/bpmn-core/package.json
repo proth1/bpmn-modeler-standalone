@@ -1,0 +1,21 @@
+{
+  "name": "@bpmn-modeler/core",
+  "version": "1.0.0",
+  "description": "Core BPMN modeling logic",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "clean": "rm -rf dist coverage"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.7"
+  }
+}

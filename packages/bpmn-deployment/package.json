@@ -1,0 +1,14 @@
+{
+  "name": "@bpmn-modeler/deployment",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@bpmn-modeler/core": "*",
+    "axios": "^1.7.9"
+  }
+}
