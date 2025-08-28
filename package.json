@@ -1,0 +1,50 @@
+{
+  "name": "@policy2control/bpmn-modeler",
+  "version": "1.0.0",
+  "description": "Standalone BPMN Process Modeler with full Camunda support",
+  "private": false,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "test:coverage": "turbo run test:coverage",
+    "test:e2e": "turbo run test:e2e",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "deploy": "turbo run deploy"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.2",
+    "ts-jest": "^29.1.5",
+    "turbo": "^2.0.9",
+    "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/policy2control/bpmn-modeler-standalone"
+  },
+  "keywords": [
+    "bpmn",
+    "camunda",
+    "process-modeling",
+    "workflow",
+    "bpm"
+  ],
+  "author": "Policy2Control",
+  "license": "MIT"
+}
